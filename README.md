@@ -1,12 +1,31 @@
-# Taller Vagrant + Provisionamiento con Shell
+#  Taller de Provisionamiento con Vagrant y Shell
 
-## Pasos
-1. Clonar este repositorio.
-2. Ejecutar `vagrant up` para levantar las máquinas.
-3. Acceder a la máquina web en: http://192.168.56.10
-4. Verificar `index.html` y `info.php`.
+Este proyecto despliega dos máquinas virtuales Ubuntu 20.04 usando **Vagrant + VirtualBox**:
+- **web**: Servidor Apache + PHP
+- **db**: Servidor PostgreSQL  
+Todo se configura automáticamente mediante **scripts de provisionamiento en Shell**.
 
-## Reto
-- Completar `provision-db.sh` para instalar PostgreSQL.
-- Crear una base de datos y tabla.
-- Conectar la página PHP a la base de datos y mostrar datos.
+---
+
+##  Objetivo
+
+Aprender a usar **Vagrant** para:
+- Crear entornos reproducibles.
+- Automatizar la instalación de servicios con **Shell scripts**.
+- Implementar una aplicación web con **Apache, PHP y PostgreSQL**.
+
+---
+
+##  Requisitos (Windows)
+
+1. **Instalar**
+   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+   - [Vagrant](https://www.vagrantup.com/downloads)
+   - [Git](https://git-scm.com/downloads) (opcional)
+
+2. **Desactivar Hyper-V y WSL2** si usas VirtualBox:
+   ```powershell
+   DISM /Online /Disable-Feature /FeatureName:VirtualMachinePlatform /NoRestart
+   DISM /Online /Disable-Feature /FeatureName:Microsoft-Hyper-V-All /NoRestart
+   DISM /Online /Disable-Feature /FeatureName:Windows-Hypervisor-Platform /NoRestart
+   bcdedit /set hypervisorlaunchtype off
