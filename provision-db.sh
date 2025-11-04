@@ -14,4 +14,4 @@ sudo systemctl start postgresql
 sudo -u postgres psql -c "CREATE USER vagrant WITH PASSWORD 'vagrant';"
 sudo -u postgres psql -c "CREATE DATABASE taller;"
 sudo -u postgres psql -d taller -c "CREATE TABLE personas (id SERIAL PRIMARY KEY, nombre VARCHAR(50));"
-sudo -u postgres psql -d taller -c "INSERT INTO personas (nombre) VALUES ('Maurico'), ('Laura'), ('Sara');"
+sudo -u postgres psql -d taller -c "INSERT INTO personas (nombre) VALUES ('Mauricio'), ('Laura'), ('Sara');"
