@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi primer sitio con Vagrant</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0e0e0, #ffffff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #b81d1d;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: white;
+      background: #b81d1d;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    a:hover {
+      background: #941515;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #f2f2f2;
+      color: #666;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola desde Apache en la VM web!</h1>
-  <p>Este sitio está corriendo en la máquina virtual provisionada con Vagrant.</p>
-  <a href="info.php">Ver script en PHP</a>
+  <header>
+    <h1>Mi Primer Sitio con Vagrant</h1>
+  </header>
+
+  <main>
+    <h2>Hola, soy <strong>Mauricio Taborda Góngora</strong></h2>
+    <p>
+      Código: <strong>1012347613</strong><br>
+      Este sitio está corriendo dentro de una máquina virtual creada y provisionada con <strong>Vagrant</strong>.<br>
+      Aquí se instalan automáticamente los servicios de <strong>Apache</strong>, <strong>PHP</strong> y <strong>PostgreSQL</strong>.
+    </p>
+    <a href="info.php">Ver script PHP de información</a>
+    <a href="base_de_datos.php" style="margin-left: 15px;">Ver conexión a la base de datos</a>
+  </main>
+
+  <footer>
+    © 2025 — Taller de Provisionamiento con Vagrant — Universidad Autónoma de Occidente
+  </footer>
 </body>
 </html>

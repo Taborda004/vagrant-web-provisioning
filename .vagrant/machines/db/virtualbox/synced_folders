@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"disabled":false,"guestpath":"/vagrant","hostpath":"C:/Users/mauri/Desktop/labso/vagrant-web-provisioning","type":"rsync","rsync__exclude":[".git/","www/"],"__vagrantfile":true,"exclude":[".git/","www/"],"owner":"vagrant","group":"vagrant"}}}
